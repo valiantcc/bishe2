@@ -1,0 +1,23 @@
+server:
+  port: 8081
+spring:
+  application:
+    name: rag-flutter-server
+  datasource:
+    url: jdbc:postgresql://49.235.96.75:5432/rag_flutter_db
+    driver-class-name: org.postgresql.Driver
+    username: root
+    password: root
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: 10MB
+      max-request-size: 100MB
+      file-size-threshold: 2MB
+aliyun:
+  dash:
+    scope:
+      access-key-id: enen //加密
+      access-key-secret: enen //加密
+      endpoint: bailian.cn-beijing.aliyuncs.com
+      workspace-id: llm-jpedwtvw0yimbzqm
